@@ -3,6 +3,8 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 
+import withAnalytics from '../src/hocs/withAnalytics';
+
 const Index = () => {
   return (
     <div>
@@ -18,4 +20,4 @@ const Index = () => {
   )
 };
 
-export default Index;
+export default withAnalytics()(Index);
